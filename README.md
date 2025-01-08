@@ -1,1 +1,1 @@
-![Sample Image](https://example.com/sample-image.png "Image Title")
+![Dashboard Image](https://raw.github.com/The-UrvishPatel/to-do-list-manager-osmos/main/images/Dashboard.png
