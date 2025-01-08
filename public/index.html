@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+
+        <div class="status-box" id="statusBox"></div>
+
+        <section class="operation" id="addTaskSection">
+            <h2>Add Task</h2>
+            <form id="addTaskForm">
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" required>
+                <label for="dueDate">Due Date:</label>
+                <input type="date" id="dueDate" name="dueDate" required>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <section class="operation" id="deleteTaskSection">
+            <h2>Delete Task</h2>
+            <form id="deleteTaskForm">
+                <label for="taskIdDelete">Task ID:</label>
+                <input type="number" id="taskIdDelete" name="taskIdDelete" required>
+                <button type="submit">Delete Task</button>
+            </form>
+        </section>
+
+        <section class="operation" id="listTasksSection">
+            <h2>List Tasks</h2>
+            <form id="listTasksForm">
+                <label for="filter">Filter:</label>
+                <select id="filter" name="filter">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="pending">Pending</option>
+                </select>
+                <button type="submit">List Tasks</button>
+            </form>
+            <div id="taskList"></div>
+        </section>
+
+        <section class="operation" id="markCompleteSection">
+            <h2>Mark Task Complete</h2>
+            <form id="markCompleteForm">
+                <label for="taskIdComplete">Task ID:</label>
+                <input type="number" id="taskIdComplete" name="taskIdComplete" required>
+                <button type="submit">Mark Complete</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.js"
+        integrity="sha512-+dJa1RvuE8/HFftifMtr7hqixdEkb/DizfXUZAA0pyZeVdNnyZyKy9RnIWi0JSWUznbCNbaQNn0E6nbtrdL+9g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
