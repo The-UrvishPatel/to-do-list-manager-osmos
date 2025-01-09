@@ -13,6 +13,13 @@ Welcome to the **To-Do List Manager** repository! This project is a simple and i
 - **Delete Tasks**: Remove tasks that are no longer needed.
 - **User-Friendly Interface**: A clean and responsive UI for seamless task management.
 
+
+## Testing
+   ```bash
+   npm test
+   ```
+
+
 ## Installation
 
 1. **Clone the Repository**:
