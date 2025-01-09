@@ -48,7 +48,7 @@ Welcome to the **To-Do List Manager** repository! This project is a simple and i
 
 ## Technology Stack
 
-- **Frontend**: React.js
+- **Frontend**: HTML, CSS and Javascript
 - **Backend**: Node.js (with Express.js)
 
 
